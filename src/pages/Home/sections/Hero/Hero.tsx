@@ -4,7 +4,7 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import Background from "../../../../components/animatedbackrground/Background";
 import React, { useState } from "react";
-import Avatar from "../../../../assets/images/avatar.jpeg";
+import Avatar from "../../../../assets/images/avatar.png"; 
 import { useTranslation } from "react-i18next";
 
 const StyledHero = styled("div")(({ theme }) => ({
@@ -40,11 +40,19 @@ const Hero = () => {
 
   const { t } = useTranslation();
 
-  const handleDownload = (lang) => {
-    const url = lang === 'pt' ? '/path/to/cv_pt.pdf' : '/path/to/cv_en.pdf';
-    window.location.href = url;
+  
+
+const handleDownload = (lang) => {
+    const url = lang === 'pt' ? '/pdf/Currículo_Rafael_Damasceno.pdf' : '/pdf/Currículo_Rafael_Damasceno_en.pdf';
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = lang === 'pt' ? 'Currículo_Rafael_Damasceno.pdf' : 'cv_Rafael_Damasceno.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
     handleCvClose();
-  };
+};
+
 
   return (
     <>
