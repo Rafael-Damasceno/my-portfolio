@@ -13,6 +13,15 @@ const projectsData = [
     projectLink: "https://github.com/Synergy4tech/Bot-LinkedIn/tags",
   },
   {
+    name: "Rodas & Motores",
+    date: "02-02-2025",
+    image: "https://raw.githubusercontent.com/Rafael-Damasceno/Rodas-e-motores/refs/heads/main/.github/Preview.png",
+    description: "Site desenvolvido para uma loja de automóveis. Utilizado como estudo para a integração com o BackEnd",
+    technology: "React, Typescript, Material UI",
+    codeLink: "https://github.com/Rafael-Damasceno/Rodas-e-motores",
+    projectLink: "hhttps://rodas-e-motores-gnvc2tp0k-rafaeldamascenos-projects.vercel.app",
+  },
+  {
     name: "Calculadora de IMC",
     date: "10-07-2023",
     image: "https://raw.githubusercontent.com/Rafael-Damasceno/calculadora-de-imc/main/src/.github/Preview.png",
